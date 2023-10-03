@@ -9,6 +9,7 @@
 * 필수 입력 항목
 <div id="#basic information">
     <p>기본 정보</p>
+    <form name="info" action="{%url'choice'}"
     <label for="name">이 름*</label>
     <input type="text" name="name" id="name" size="8"><br>
     <label for="email">이메일*</label>
@@ -24,16 +25,24 @@
     <label for="address">주소*</label>
     <input type="text" name="address" id="address" size="30"><br>
 </div>
-<div>
+<div id="#education">
+    <form name="edu" action="{%url 'edu'}"
     <p>학 력</p>
     <label for="school_name">학교 명*</label>
     <input type="text" name="name" id="school_name" size="8"><br>
+
     <label for="major">전 공*</label>
     <input type="text" name="major" id="major" size="12"><br>
-    <label for="name">졸업 여부*</label>
-    <input type="name" name="name" id="" size="8"><br>
-    <label for="name">졸업 예정일*</label>
-    <input type="name" name="name" id="" size="8"><br>
+
+    <label for="graduate">졸업 여부*</label>
+        <select name="graduate_check" id="gradeuate_check">
+            <option value="0">---선택---</option>
+            <option value="1">졸업예정</option>
+            <option value="2">졸업</option>
+        </select>
+    <br>
+    <label>졸업 예정일*</label>
+    <input type="date"><br>
 </div>
 </body>
 </html>
