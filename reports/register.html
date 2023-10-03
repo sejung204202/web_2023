@@ -11,19 +11,19 @@
     <p>기본 정보</p>
     <form name="info" action="{%url'choice'}">
     <label for="name">이 름*</label>
-    <input type="text" name="name" id="name" size="8"><br>
+        <input type="text" name="name" id="name" size="8"><br>
     <label for="email">이메일*</label>
-    <input type="email" name="email" id="email" size="15 placeholder='someone@domain.com"><br>
+        <input type="email" name="email" id="email" size="15 placeholder='someone@domain.com"><br>
     <label for="password">암 호*</label>
-    <input type="password" name="password" id="password" size="12"><br>
+        <input type="password" name="password" id="password" size="12"><br>
     <label for="password2">암호 확인*</label>
-    <input type="password" name="password" id="password2" size="12"><br>
+         <input type="password" name="password" id="password2" size="12"><br>
     <label for="phonenum">모바일 폰*</label>
-    <input type="tel" name="phone_number" id="phonenum" size="13" placeholder="010-0000-0000"><br>
+        <input type="tel" name="phone_number" id="phonenum" size="13" placeholder="010-0000-0000"><br>
     <label for="url">개인 홈페이지</label>
-    <input type="url" name="url" id="url" size="30" placeholder="http://"><br>
+        <input type="url" name="url" id="url" size="30" placeholder="http://"><br>
     <label for="address">주소*</label>
-    <input type="text" name="address" id="address" size="30"><br>
+        <input type="text" name="address" id="address" size="30"><br>
     </form>
 </div>
 <div id="#education">
@@ -61,5 +61,19 @@
         <input type="number" min="0" max="10" step="0.5"><br>
     </form>
 </div>
+<div id="#resume">
+    <form name="career" action="{%url 'career'}">
+    <p>자기소개서</p>
+        <br>
+    <label>첨부파일*</label>
+        <input type="file"><br>
+    </form>
+</div>
+<form name="srch" action="{%url 'search'%}">
+    <p>
+        <input type="submit" value="제 출">
+        <input type="reset" value="재작성">
+    </p>
+</form>
 </body>
 </html>
