@@ -3,76 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>회원 가입</title>
+    <style>
+        div > p {
+            font-weight:bold; background: lightblue; width:800px; padding-left:10px;
+        }
+        .j {
+            margin-left: 8px;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+            display: inline-block;}
+
+        span{
+            color:red;
+        }
+
+
+    </style>
 </head>
 <body>
+
 <h1>취업 정보 계정 만들기</h1>
-* 필수 입력 항목
-<div id="#basic information">
+<p style="color:red; font-size: 10pt;">* 필수 입력 항목</p>
+<div>
     <p>기본 정보</p>
     <form name="info">
-    <label for="name">이 름*</label>
-        <input type="text" name="name" id="name" size="8"><br>
-    <label for="email">이메일*</label>
-        <input type="email" name="email" id="email" size="15 placeholder='someone@domain.com"><br>
-    <label for="password">암 호*</label>
-        <input type="password" name="password" id="password" size="12"><br>
-    <label for="password2">암호 확인*</label>
-         <input type="password" name="password" id="password2" size="12"><br>
-    <label for="phonenum">모바일 폰*</label>
-        <input type="tel" name="phone_number" id="phonenum" size="13" placeholder="010-0000-0000"><br>
-    <label for="url">개인 홈페이지</label>
-        <input type="url" name="url" id="url" size="30" placeholder="http://"><br>
-    <label for="address">주소*</label>
-        <input type="text" name="address" id="address" size="30"><br>
+    <p><label for="name" class="j" class="c">이 름<span>*</span></label>
+        <input type="text" name="name" id="name" size="8"><p>
+    <p><label class="j" for="email">이메일<span>*</span></label>
+        <input type="email" name="email" id="email" size="15 placeholder='someone@domain.com"></p>
+    <p><label class="j" for="password">암 호<span>*</span></label>
+        <input type="password" name="password" id="password" size="12"></p>
+    <p><label class="j" for="password2">암호 확인<span>*</span></label>
+         <input type="password" name="password" id="password2" size="12"></p>
+    <p><label class="j" for="phonenum">모바일 폰<span>*</span></label>
+        <input type="tel" name="phone_number" id="phonenum" size="13" placeholder="010-0000-0000"></p>
+    <p><label class="j" for="url">개인 홈페이지</label>
+        <input type="url" name="url" id="url" size="30" placeholder="http://"></p>
+    <p><label class="j" for="address">주소<span>*</span></label>
+        <input type="text" name="address" id="address" size="30"></p>
     </form>
 </div>
-<div id="#education">
-    <form name="edu">
+<div>
     <p>학 력</p>
-     <label for="school_name">학교 명*</label>
+    <form name="edu">
+     <label class="j" for="school_name">학교 명<span>*</span></label>
         <input type="text" name="name" id="school_name" size="8"><br>
 
-    <label for="major">전 공*</label>
+    <label class="j" for="major">전 공<span>*</span></label>
         <input type="text" name="major" id="major" size="12"><br>
 
 
-        <label for="gradeuate_check">졸업 여부*</label>
+        <label class="j" for="gradeuate_check">졸업 여부<span>*</span></label>
         <select name="graduate_check" id="gradeuate_check">
             <option value="0">---선택---</option>
             <option value="1">졸업예정</option>
             <option value="2">졸업</option>
         </select>
     <br>
-    <label>졸업 예정일</label>
+    <label class="j">졸업 예정일</label>
         <input type="date"><br>
     </form>
 </div>
-<div id="#career">
-    <form name="career">
+<div>
     <p>업무 경력</p>
-     <label for="pre_company">근무 업체명</label>
+    <form name="career">
+     <label class="j" for="pre_company">근무 업체명</label>
         <input type="text" name="pre_company" id="pre_company" size="20"><br>
 
-    <label for="post_postion">직위</label>
+    <label class="j" for="post_postion">직위</label>
         <input type="text" name="post_postion" id="post_postion" size="10"><br>
-     <label for="task">담당 업무</label>
+     <label class="j" for="task">담당 업무</label>
         <textarea id="task" name="task" cols="80" rows="10" placeholder="이전 업체에서 담당한 업무를 기술하시오."></textarea>
     <br>
-    <label>근무 년수</label>
+    <label class="j">근무 년수</label>
         <input type="number" min="0" max="10" step="0.5">년<br>
     </form>
 </div>
-<div id="#resume">
-    <form name="career">
+<div>
     <p>자기소개서</p>
-    <label>첨부파일*</label>
+    <form name="career">
+    <label class="j">첨부파일<span>*</span></label>
         <input type="file"><br>
     </form>
 </div>
-<form name="srch">
+<form name="srch" style="margin-left:200px ">
     <p>
-        <input type="submit" value="제 출">
-        <input type="reset" value="재작성">
+            <input type="submit" value="제 출">
+            <input type="reset" value="재작성">
     </p>
 </form>
 </body>
