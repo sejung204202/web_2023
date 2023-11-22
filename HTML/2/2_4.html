@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 만들기</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    caption {
+      font-size : large;
+      font-weight: bolder;
+      margin: 10px;
+    }
+    th{ /*열 제목*/
+      width: 185px;
+      padding: 5px;
+      border-top : 2px solid black;
+      border-bottom : 2px solid black;
+    }
+    td{
+      text-align: center;
+      padding: 5px;
+      border-bottom : 1px solid black;
+    }
+    tr:last-child {
+      border-bottom: 2px solid black;
+    }
+    th:first-child {
+      bottom-right : 2px solid black
+    }
+    tbody tr:hover {
+      background-color : slategray;
+    }
+    tr:nth-child(even) {
+      background-color: #9ec5fe;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <caption>시간표만들기</caption>
+  <thead>
+    <tr><th>교시</th><th>월</th><th>화</th><th>수</th><th>목</th></tr>
+  </thead>
+  <tbody>
+  <tr><td>1교시</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>2교시</td><td></td><td>사용자중심디자인</td><td></td><td>사용자중심디자인</td></tr>
+  <tr><td>3교시</td><td>웹프로그래밍</td><td>데이터베이스응용</td><td>웹프로그래밍</td><td>데이터베이스응용</td></tr>
+  <tr><td>4교시</td><td>데이터처리프로그래밍</td><td>확률과통계2</td><td>데이터처리프로그래밍</td><td>확률과통계2</td></tr>
+  <tr><td>5교시</td><td>선형대수학</td><td>지각심리학</td><td>선형대수학</td><td>지각심리학</td></tr>
+  </tbody>
+</table>
+</body>
+</html>

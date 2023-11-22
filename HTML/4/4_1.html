@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form-class example</title>
+        <meta name="viewport" content="width=device-width, intital-scale=1">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+  <form class="was-validated" action="">
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label">Email :</label>
+      <input type="email" class="form-control" placeholder="enter email" required id="email">
+      <div class="invalid-feedback">Fill out a vaild email address.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password :</label>
+      <input type="password" class="form-control" placeholder="enter password" required id="pwd">
+      <div class="invalid-feedback">Fill out this field.</div>
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" name="remember">Remember Me</label>
+    </div>
+    <div class="mb-3">
+      <label for="comment" class="form-label">Comment :</label>
+      <textarea row="5" class="form-control" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개서</title>
+    <style>
+        p { margin : 3px;}
+    </style>
+</head>
+<body>
+<h3>자기소개서</h3>
+<hr>
+<form>
+    <div id="text_input">
+        <p>
+        <label for="student_name">이름 : </label>
+        <input type="text" id="student_name"></p>
+        <p>
+            <label for="std_email">이메일 : </label>
+                <input type="email" id="std_email">
+        </p>
+        <p>
+            <label for="std_pwd">비밀번호 : </label>
+                <input type="password" id="std_pwd">
+        </p>
+    </div>
+    <div id="slt_input">
+        <p>보유 기술 :
+            <label><input type="checkbox" value="p">python</label>
+            <label><input type="checkbox" value="c">c++</label>
+            <label><input type="checkbox" value="j">front-end web technology</label>
+        </p>
+        <p>성별 :
+            <label><input type="radio" name='gender' id="male" value="m">남자</label>
+            <label><input type="radio" name='gender' id="female" value="f">여자</label>
+        </p>
+    </div>
+</form>
+</body>
+</html>
