@@ -65,18 +65,70 @@
                 </div>
             </section>
             <!--테일러 스위프트 앨범 발매일 표 만들기-->
-            <section>
-                <table class="table">
-                    <thead class="table-dark">
+            <section class="container">
+                <div class="row gx-5 justify-content-center table-responsive-sm">
+                <table class="table caption-top">
+                    <caption>Taylor Swift's album list</caption>
+                    <thead class="table-light">
                         <tr>
-                            <th>album name</th><th>Release date</th><
+                            <th>album name</th><th>Release date</th><th>genre</th><th>note</th>
                         </tr>
-
                     </thead>
-
+                    <tbody>
+                    <tr><td>Taylor Swift</td><td>2006.10.24</td><td>Contury</td><td>her first album</td></tr>
+                    <tr><td>fearless</td><td>2008.11.11</td><td>Contury pop</td><td>Grammy Award for Album of the Year</td></tr>
+                    <tr><td>speak now</td><td>2010.10.25</td><td>Contury, Pop, Pop rock</td><td>All songs were written and composed by her.</td></tr>
+                    <tr><td>red</td><td>2012.10.22</td><td>Contury, Pop, Pop rock</td><td>transitional period of genre</td></tr>
+                    <tr><td>1989</td><td>2014.10.27</td><td>Synthpop</td><td>Legendary success and second Album of the Year award</td></tr>
+                    <tr><td>reputation</td><td>2017.11.10</td><td>Synthpop, R&B</td><td>Comeback after 3 year hiatus</td></tr>
+                    <tr><td>lover</td><td>2019.08.23</td><td>Pop</td><td>A different vibe from the previous album</td></tr>
+                    <tr><td>forklore</td><td>2020.07.24</td><td>Chamber pop, indie folk, alternative rock, electro folk</td><td>Third Grammy Award for Album of the Year, released during COVID-19</td></tr>
+                    <tr><td>evermore</td><td>2020.12.11</td><td>Alternative rock, indie folk, chamber pop</td><td>sister album by forklore</td></tr>
+                    <tr><td>midnight</td><td>2022.10.21</td><td>Synthpop, alternative</td><td>Another peak of her life</td></tr>
+                    </tbody>
                 </table>
-
+                </div>
             </section>
+
+            <!--album cover-->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
         </main>
         <!-- Footer-->
