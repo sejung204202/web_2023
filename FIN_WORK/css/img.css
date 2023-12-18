@@ -1,0 +1,30 @@
+.pics {      /* 전체 케러셀 */
+            width: 600px;
+            float: left;
+            position: relative;
+            left: 50%;
+            object-fit: cover;
+        }
+.carousel-container {
+            max-width: 600px; /* 적절한 폭으로 조절 */
+            margin: auto; /* 가운데 정렬을 위해 margin을 auto로 설정 */
+    }
+
+.carousel-inner {
+            width: 600px;
+            height: 600px; /* 이미지 높이 변경 */
+
+        }
+.carousel-item {
+            width: auto;
+            height: 100%;
+        }
+
+.d-block {
+            display: block;
+            width: auto;
+            height: 100%;
+        }
+#carouselExampleControlsNoTouching {
+            width : 600px
+}
