@@ -30,7 +30,7 @@
                             <li class="nav-item"><a class="nav-link" href="introduce.html">Introduce</a></li>
                             <li class="nav-item"><a class="nav-link" href="report.html">Report</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Favorite</a>
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Favorite</a></li>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="favorite_pic.html">Take a PIC</a></li>
                                         <li><a class="dropdown-item" href="favorite_TAY.html">Taylor Swift</a></li>
@@ -40,15 +40,24 @@
                     </div>
                 </div>
             </nav>
-            <!-- Page Content-->
+            <!-- About me-->
             <section class="bg-light py-5">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
+                        <div class="col-sm-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <p class="lead fw-light mb-4">안녕하세요 저는 박세정입니다.</p>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                                <p class="lead fw-light mb-3">Hello! This is Sejung Park.</p>
+                                <p class="lead fw-lighter mb-1">I am attending Dongduk Women's University.</p>
+                                <p class="text-muted ">I am a second year majoring in HCI Science. Currently, I am double majoring in Information Statistics. I currently live in Paju, Gyeonggi-do, and my favorite color is blue. And my hobbies are taking pictures and listening to Taylor Swift. My favorite food is sushi.
+                                Below are links to my Instagram, blog, and github. Learn more about my core hobbies by clicking the button below.</p>
+
+
+                                <!--favorite 페이지로 이동할 버튼 생성하기-->
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center my-3">
+                                    <a class="btn btn-primary px-5 py-3 fs-6 fw-bolder" href="favorite_TAY.html">Taylor Swift</a>
+                                    <a class="btn btn-secondary px-5 py-3 fs-6 fw-bolder text-light" href="favorite_pic.html">Take a Pic</a>
+                                </div>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" href="https://www.instagram.com/sjl_zjng"><i class="bi bi-instagram"></i></a>
                                     <a class="text-gradient" href="https://blog.naver.com/sejung204202"><i class="bi bi-journal-richtext"></i></a>
@@ -59,162 +68,138 @@
                     </div>
                 </div>
             </section>
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Introduce</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2019 - Present</div>
-                                                <div class="small fw-bolder">Web Developer</div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+            <!-- course 소개-->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My Course</span></h2>
+                            <p class="lead fw-lighter mb-5">2022 ~ 2023 수강과목</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="resume-title text-gradient d-inline">Major</h3>
+                                    <p>Department of HCI science</p>
+                                    <div class="resume-item mb-5">
+                                        <h4>2022</h4>
+                                        <p>
+                                        <h5>1학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>HCI개론</li>
+                                            <li>프로그래밍입문</li>
+                                            <li>인지과학기초</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        <h5>2학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>기초선형대수학</li>
+                                            <li>자료구조와 알고리즘</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <div class="resume-item">
+                                        <h4>2023</h4>
+                                        <p>
+                                        <h5>1학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>확률과 통계1</li>
+                                            <li>인간공학</li>
+                                            <li>창의적 공학 설계</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        <h5>2학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>확률과 통계2</li>
+                                            <li>지각심리학</li>
+                                            <li>사용자중심디자인</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="resume-title text-gradient d-inline">Minor</h3>
+                                    <p>Department of Information Statistics</p>
+                                    <div class="resume-item">
+                                        <h4>2023</h4>
+                                        <p>
+                                        <h5>1학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>컴퓨터 프로그래밍 입문</li>
+                                            <li>데이터베이스기초</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        <h5>2학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>데이터처리프로그래밍</li>
+                                            <li>데이터베이스 응용</li>
+                                            <li>선형대수학</li>
+                                            <li>웹프로그래밍</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+
+                        </div>
+                            <div class="row">
+                                <h2 class="display-5 fw-bolder mt-5"><span class="text-gradient d-inline">My Course schedule</span></h2>
+                                <p class="lead fw-lighter mb-5">2024 ~ 2025 수강과목</p>
+                                <div class="col-sm-6">
+                                    <h3 class="resume-title text-gradient d-inline">Major</h3>
+                                    <p>Department of HCI science</p>
+                                    <div class="resume-item mb-5">
+                                        <h4>2024</h4>
+                                        <p>
+                                        <h5>1학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>UX/UI 디자인</li>
+                                            <li>컴퓨터 그래픽스 1</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        <h5>2학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>사용성평가</li>
+                                            <li>텍스트 마이닝</li>
+                                            <li>컴퓨터 그래픽스 2</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="resume-title text-gradient d-inline">Minor</h3>
+                                    <p>Department of Information Statistics</p>
+                                    <div class="resume-item">
+                                        <h4>2024</h4>
+                                        <p>
+                                        <h5>1학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>객체 지향 프로그래밍</li>
+                                            <li>통계소프트웨어실습</li>
+                                            <li>통계학 입문</li>
+                                        </ul>
+                                        </p>
+                                        <p>
+                                        <h5>2학기</h5>
+                                        <ul class="text-center list-unstyled">
+                                            <li>수리통계학</li>
+                                            <li>회귀분석</li>
+                                            <li>다변량학습</li>
+                                            <li>기계학습</li>
+                                        </ul>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- Footer-->
+
+
+                        <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
                 </div>
             </div>
         </footer>
@@ -222,5 +207,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    </body>
+
 </html>
