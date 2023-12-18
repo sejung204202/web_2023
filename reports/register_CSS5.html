@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+    <style>
+        div > p {
+            font-weight:bold; background: lightblue; width:800px; padding-left:10px;
+        }
+        .j {
+            margin-left: 8px;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+            display: inline-block;}
+
+
+        span{
+            color:red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>취업 정보 계정 만들기</h1>
+<p style="color:red; font-size: 10pt;">* 필수 입력 항목</p>
+<div>
+    <p>기본 정보</p>
+    <form name="info">
+    <p><label for="name" class="j" class="c">이 름<span>*</span></label>
+        <input type="text" name="name" id="name" size="8"></p>
+    <p><label class="j" for="email">이메일<span>*</span></label>
+        <input type="email" name="email" id="email" size="15 placeholder='someone@domain.com"></p>
+    <p><label class="j" for="password">암 호<span>*</span></label>
+        <input type="password" name="password" id="password" size="12"></p>
+    <p><label class="j" for="password2">암호 확인<span>*</span></label>
+         <input type="password2" name="password" id="password2" size="12"></p>
+    <p><label class="j" for="phonenum">모바일 폰<span>*</span></label>
+        <input type="tel" name="phone_number" id="phonenum" size="13" placeholder="010-0000-0000"></p>
+    <p><label class="j" for="url">개인 홈페이지</label>
+        <input type="url" name="url" id="url" size="30" placeholder="http://"></p>
+    <p><label class="j" for="address">주소<span>*</span></label>
+        <input type="text" name="address" id="address" size="30"></p>
+    </form>
+</div>
+<div>
+    <p>학 력</p>
+    <form name="edu">
+     <p><label class="j" for="school_name">학교 명<span>*</span></label>
+        <input type="text" name="name" id="school_name" size="8"></p>
+
+   <p> <label class="j" for="major">전 공<span>*</span></label>
+        <input type="text" name="major" id="major" size="12"></p>
+
+
+        <p><label class="j" for="gradeuate_check">졸업 여부<span>*</span></label>
+        <select name="graduate_check" id="gradeuate_check">
+            <option value="0">---선택---</option>
+            <option value="1">졸업예정</option>
+            <option value="2">졸업</option>
+        </select></p>
+    <p><label class="j">졸업 예정일</label>
+        <input type="date"></p>
+    </form>
+</div>
+<div>
+    <p>업무 경력</p>
+    <form name="career">
+     <p><label class="j" for="pre_company">근무 업체명</label>
+        <input type="text" name="pre_company" id="pre_company" size="20"></p>
+
+    <p><label class="j" for="post_postion">직위</label>
+        <input type="text" name="post_postion" id="post_postion" size="10"></p>
+     <p><label class="j" for="task">담당 업무</label>
+        <textarea id="task" name="task" cols="80" rows="10" placeholder="이전 업체에서 담당한 업무를 기술하시오."></textarea></p>
+    <p><label class="j">근무 년수</label>
+        <input type="number" min="0" max="10" step="0.5">년</p>
+    </form>
+</div>
+<div>
+    <p>자기소개서</p>
+    <form name="career">
+   <p> <label class="j">첨부파일<span>*</span></label>
+        <input type="file"></p>
+    </form>
+</div>
+<form name="srch" style="margin-left:200px ">
+    <p>
+            <input type="submit" value="제 출">
+            <input type="reset" value="재작성">
+    </p>
+</form>
+</body>
+</html>

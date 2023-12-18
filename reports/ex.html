@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 클릭 예제</title>
+</head>
+<body>
+
+  <h1>버튼을 클릭하여 다른 HTML 문서를 현재 페이지에서 보이게 하기</h1>
+
+  <!-- 버튼 엘리먼트 -->
+  <button id="myButton">클릭하세요</button>
+    <button id="myButton2">클릭하세요</button>
+    <button id="myButton3">클릭하세요</button>
+    <button id="myButton4">클릭하세요</button>
+
+  <!-- 결과를 표시할 iframe 엘리먼트 -->
+  <iframe id="resultFrame"></iframe>
+
+  <script>
+    // 버튼 엘리먼트를 가져오기
+    var button1 = document.getElementById("myButton");
+    var button2 = document.getElementById("myButton2");
+    var button3 = document.getElementById("myButton3");
+    var button4 = document.getElementById("myButton4");
+
+
+    // 결과를 표시할 iframe 엘리먼트 가져오기
+    var resultFrame = document.getElementById("resultFrame");
+
+    // 버튼에 클릭 이벤트 리스너 추가
+    button1.addEventListener("click", function() {
+      // 다른 HTML 문서를 iframe에 표시
+      resultFrame.src = "register_html.html";
+    });
+        button2.addEventListener("click", function() {
+      // 다른 HTML 문서를 iframe에 표시
+      resultFrame.src = "register_CSS5.html";
+    });
+            button3.addEventListener("click", function() {
+      // 다른 HTML 문서를 iframe에 표시
+      resultFrame.src = "register_bt5.html";
+    });
+                button4.addEventListener("click", function() {
+      // 다른 HTML 문서를 iframe에 표시
+      resultFrame.src = "report4.html";
+    });
+  </script>
+
+</body>
+</html>
