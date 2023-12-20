@@ -11,12 +11,12 @@
     }
 
 .carousel-inner {
-            width: 600px;
+            width: auto;
             height: 600px; /* 이미지 높이 변경 */
 
         }
 .carousel-item {
-            width: auto;
+            width: 600px;
             height: 100%;
         }
 
